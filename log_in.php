@@ -43,7 +43,7 @@
 			else
 			{
 			$_SESSION['zle_dane_logowania']='<span style="color:red; font-size:12px; font-weight:700;">Niepoprawny login lub hasło!</span>';
-			header('Location:index.php');
+			header('Location: ' . $_SERVER['HTTP_REFERER']);
 			}
 		}
 		$polaczenie->close(); //zamykamy polaczenie z baza danych
