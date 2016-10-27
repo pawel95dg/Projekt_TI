@@ -1,0 +1,143 @@
+	body {
+	background-image: url(background.jpg);
+	background-repeat: repeat-x;
+	font-family: 'Ubuntu Mono', monospace;
+}
+	#container{
+		
+	 width:1000px;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
+	#logo{
+	/*border-width: medium; border-style: solid; border-color: #f25605; */
+	 background-color: transparent;
+	 color:#f25605;
+	 text-align: center;
+	 font-size:34px;
+	}
+	#menu{
+		/* f25605 kolor pomarancz spaw trek*/
+	background-color:transparent;
+	padding:10px;
+	text-align:center;
+	}
+	.option{
+	float:left;
+	min-width:50px;
+	height:25px;
+	font-size:24px;
+	padding:10px;
+	border-right: 2px dotted #f25605;
+	}
+	.option:hover{
+	font-size:28px;
+	cursor:pointer;
+	background-color:#CCCCCC;
+	}
+	
+	
+	#topbar{
+	background-color:lightgray;
+	padding:10px;
+	}
+	#leftpanel{
+		float:left;
+	}
+	#loginpanel{
+		text-align:center;
+		margin-top:50px;
+		margin-left:auto;
+		margin-right:auto;
+		background-image:url(contentbackground.png);
+		width:210px;
+		height:160px;
+			padding:10px;
+		padding-top:30px;
+	}
+	
+	.logintextbox{
+		background-image:url(contentbackground.png);
+		margin-top:10px;
+		margin-left:auto;
+		margin-right:auto;
+		width:200px;
+		height:20px;
+	}
+	.logintextbox:hover{
+		background-color:#666666;
+	}
+	.loginclick{
+		background-image:url(contentbackground.png);
+		margin-top:10px;
+		margin-left:auto;
+		margin-right:auto;
+		width:80px;
+		height:20px;
+	}
+	.loginclick:hover{
+		background-color:#666666;
+	}
+	#sidebar{
+	background-color:transparent;
+	float:left;
+	width:220px;
+	padding:20px;
+	min-height:200px;
+	}
+	.nav{
+	min-width:50px;
+	height:25px;
+	font-size:24px;
+	padding:10px;
+	border-bottom: 2px dashed #f25605;
+	text-align:center;
+	}
+	.nav:hover{
+	font-size:28px;
+	cursor:pointer;
+	background-color:#CCCCCC;
+	}
+	#content{
+	background-image:url(contentbackground.png);
+	background-repeat:repeat-x;
+	float:left;
+	text-align: center;
+	padding:40px;
+	width:660px;
+	min-height:620px
+	}
+	
+	#footer{
+	clear:both;
+	background-color:transparent;
+	color:#f25605;
+	font-weight: 900;
+	text-align:center;
+	padding:20px;
+	}
+	
+	a.navlink{
+		color:#000000;
+		text-decoration:none;
+		display:block;
+		min-width:50px;
+		height:25px;	
+	}
+		#oferta{
+		width:780px;
+		margin:auto;
+	}
+	.oferta_tile{
+		
+		float:left;
+		width:270px;
+		margin:10px;
+		height:200px;
+		text-align:center;
+		font-size:25px;
+	}
+	.oferta_tile:hover
+	{	
+		background-image:url(contentbackground.png);
+	}
