@@ -31,13 +31,12 @@
 		<?php
 		if(isset($_SESSION['zalogowany'])&&($_SESSION['zalogowany']==true)){
 			echo '<style>#loginpanel{height:60px;}</style> ';
-			echo "Witaj, ".$_SESSION['imie'];
+			echo "Hello, ".$_SESSION['imie'];
 			echo '
 			
 			<form action="log_out.php" method="post">
-			<input value="log out" type="submit"/>
+			<input value="Log out" type="submit"/>
 		   </form>';
-			
 			}
 			
 		else{
@@ -46,14 +45,18 @@
 				User Login:
 			<input class="logintextbox" type="text" name="user_login"/>
 					Password:
-			<input class="logintextbox" type="text" name="user_password"/>
+			<input class="logintextbox" type="password" name="user_password"/>
 					Login :
 			<input class="loginclick" type="submit" value="Log in"/>
 			</form> ';
 			}
 		 ?>
 		   <?php 
-	if(isset($_SESSION['zle_dane_logowania'])) echo $_SESSION['zle_dane_logowania'];
+	if(isset($_SESSION['zle_dane_logowania']))
+	{ 
+	echo $_SESSION['zle_dane_logowania']; //wyswietlenie ze niepoprawne dane
+	unset($_SESSION['zle_dane_logowania']); //komenda zeby po odswiezeniu strony nie bylo informacji o zlych danych
+	}
 	?>
 		</div>
 	 </div>
